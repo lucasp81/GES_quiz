@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geschiedenis aan de VU Amsterdam - Ontdek jouw pad</title>
+    <title>Geschiedenis aan de Vrije Universiteit</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -361,7 +361,7 @@
                 options: [
                     { id: 'native_lang', text: "Studeren in het Nederlands geeft me het vertrouwen om actief deel te nemen en maakt de studie voor mij plezieriger." },
                     { id: 'dutch_focus', text: "Ik richt me op een carrière in Nederland, bijvoorbeeld in het onderwijs of de erfgoedsector." },
-                    { id: 'exploring', text: "Ik ben nog aan het oriënteren, maar mijn voorkeur gaat uit naar Nederlands." },
+                    { id: 'exploring', text: "Ik ben me nog aan het oriënteren, maar mijn voorkeur gaat uit naar Nederlands." },
                     { id: 'english_pref', text: "Eigenlijk studeer ik liever in het Engels, maar ik verken alle opties." }
                 ]
             },
@@ -495,7 +495,7 @@
         }
 
         function generateResultsHTML() {
-            let html = `<h2 class="main-title">Jouw reis door de opleiding Geschiedenis</h2>`;
+            let html = `<h2 class="main-title">Jouw profiel voor Geschiedenis</h2>`;
 
             // --- Triage-based Hook ---
             const q1_answer = answers.q1;
@@ -581,12 +581,11 @@
             // --- Final CTA Box ---
              html += `
                 <div class="cta-box">
-                    <h3>Klaar om verder te kijken?</h3>
-                    <p style="margin-bottom: 20px;">Zet de volgende stap in je ontdekkingsreis naar de opleiding Geschiedenis aan de VU Amsterdam.</p>
+                    <h3>Klaar voor de volgende stap?</h3>
+                    <p style="margin-bottom: 20px;">Verken de officiële opleidingspagina voor meer informatie over het curriculum, toelatingseisen en het studentenleven.</p>
                     <div class="cta-buttons">
-                        <a href="https://vu.nl/nl/opleidingen/bachelor/geschiedenis" target="_blank" class="btn-secondary">Bekijk de opleiding</a>
-                        <a href="#" onclick="alert('Dit opent normaal een contactformulier of kalender.')" class="btn-secondary">Plan een gesprek</a>
-                        <a href="#" onclick="alert('Hier zou je je e-mailadres invullen voor een infopakket.')" class="btn-secondary">Ontvang infopakket</a>
+                        <a href="https://vu.nl/nl/onderwijs/bachelor/geschiedenis" target="_blank" class="btn-secondary">Bekijk de opleiding</a>
+                        <button onclick="window.location.reload();" class="btn-secondary">Doe de quiz opnieuw</button>
                     </div>
                 </div>`;
 
